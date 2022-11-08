@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/cor1.jpg' %}"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/cor2.jpg' %}"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/cor3.jpg' %}"  alt="...">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'img/cor4.jpg' %}"  alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<center>
+<h1>About Ojas Innovative Technologies</h1><br>
+  <div
+Cost Effective IT Services Partner
+Ojas is a Cost Effective IT Services Company with 11 years of rich experience in serving its customers with a team of 700+ IT Professionals. We’re one of the fastest growing companies in India providing Services in Application Dev & Support, Identity Governance, Testing Services, Mobile Dev & Testing, Staff Augmentation and Staffing Services to our customers.
+We offer our services from our ODC in Hyderabad, India and cater to US, Canada and Australia.
+</center>
+{% endblock  %}
